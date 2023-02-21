@@ -17,6 +17,8 @@ class ExpenceController extends Controller
         ]);
     }
 
+    // User can create Expance by this methord. User can create Expance only by name / reason.
+    // After that User can update other fields like amount, image, date. 
     public function store(Request $request)
     {
         $request->validate([
@@ -53,6 +55,7 @@ class ExpenceController extends Controller
         ]);
     }
 
+    // User can update Expance by this methord.
     public function update(Request $request, $id)
     {
         $request->validate([
