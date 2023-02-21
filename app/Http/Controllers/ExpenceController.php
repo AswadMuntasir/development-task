@@ -93,6 +93,10 @@ class ExpenceController extends Controller
         ]);
     }
 
+    // This is a Filter Function.
+    //User can filter By Date (Old to new & new to old)
+    //User can filter By Price / Amount (High to Low & Low to High)
+    //User can filter By Expance Name
     public function expenceFilter(Request $request)
     {
         if ($request->datePrice == "NewToOld") {
